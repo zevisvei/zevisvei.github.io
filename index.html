@@ -1,10 +1,33 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta content="utf-8"
-    </head>
-    <body>
-        <p>hello world!</p>
-    </body>
+<!-- B.H. -->
+<head>
+    <meta charset="utf-8" />
+    <title>API Upload test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon"  type="image/png"  href="res/icon64x64.png" />
+	<meta name="robots" content="noindex, nofollow" />
+</head>
+<body>
+    <p>B.H.</p>
+    <form action="api/UploadFile" method="POST" enctype="multipart/form-data" target="_blank">
+        <p>
+            <label>token: </label><input type="text" name="token" />
+        </p>
+        <p>
+            <label>path: </label><input type="text" name="path" />
+        </p>
+        <p>
+            <input type="file" name="upload" accept="audion/*" />
+        </p>
+        <p>
+            <label for="convert-audio">convertAudio:</label>
+            <input id="convert-audio" name="convertAudio" type="checkbox" value="1" />
+        </p>
+        <p>
+            <input type="submit" name="submit" />
+        </p>
+    </form>
+</body>
 </html>
-
